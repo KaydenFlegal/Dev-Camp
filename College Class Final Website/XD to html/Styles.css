@@ -6,9 +6,13 @@ body {
     background-color: black;
 }
 
+h3 {
+    color:#707070;
+}
+
 #site-wrap {
     background-color:black;
-    height: 100vh;
+    height: 100%;
     display: grid;
     grid-template-columns:
         1fr 
@@ -19,7 +23,7 @@ body {
 
     grid-template-rows: 
         104px
-        215px
+        min-content
         min-content
         min-content
         1fr
@@ -27,9 +31,9 @@ body {
 
     grid-template-areas:
         ". header header header header ."
-        "featured-header featured-header featured-header featured-header featured-header featured-header"
         ". featured-main featured-main featured-main fetured-profile ."
         ". content content content content ."
+        "footer footer footer footer footer footer"
         "footer footer footer footer footer footer"
 }
 
@@ -68,11 +72,7 @@ body {
     color: black;
 }
 
-.featured-header {
-    background-image: url('images/Banner\ Image.png');
-    grid-area: featured-header;
-    background-size: cover;
-}
+
 
 .featured-main {
     
@@ -115,12 +115,41 @@ body {
     margin: 0 5px 2em 5px;
 }
 
+.cert-imgs {
+    width: 272;
+    height: 272;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.work-imgs {
+    width: 272;
+    height: 272;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.img-holder-fries {
+    width: 1000px;
+    height: 1000px;
+    border: 5px solid #707070;
+    background-color: #333;
+    margin: auto;
+    background-image:url(images/Screenshot-2022-12-13-122738.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
 .footer {
     background-color: #333;
     color: gray;
     text-align: center;
     padding: 2em;
     grid-area: footer;
+}
+
+.contact-info {
+    padding-top: 30px;
 }
 
 @media screen and (max-width: 400px) {
@@ -133,10 +162,9 @@ body {
         1fr
     ;
         grid-template-areas:
-        "header header header header header header"
-        "featured-header featured-header featured-header featured-header featured-header featured-header"
-        "featured-main featured-main featured-main featured-main fetured-profile fetured-profile"
-        "content content content content content content"
+        ". header header header header ."
+        ". featured-main featured-main featured-main fetured-profile ."
+        ". content content content content ."
         "footer footer footer footer footer footer"
     }
 

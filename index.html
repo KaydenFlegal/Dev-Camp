@@ -6,6 +6,25 @@ this is going to be the path to the file that prossecess the data when the user 
 <!-- The (method="")  Atribute, you have two options with method, "get" or "post"-->
 
 <!-- The (name="") Atribute, is just to name the form-->
-<form action="#" method="get" name="SampleForm">
 
+<!-- The (enctype="multipart/form-data") alows the form to upload data-->
+
+<form action="#" method="get" name="SampleForm" enctype="multipart/form-data">
+    
+    <label for="clientName">Name: </label>
+
+    <!-- Text Feild input -->
+    <input type="text" name="clientName" id="clientName" />
+    <br />
+    <!-- Radio Buttons-->
+    Gender <br />
+    <label>
+        <input type="radio" name="Gender" value="Male" /> Male
+    </label>
+    <br />
+    <label>
+        <input type="radio" name="Gender" value="Female" /> Female
+    </label>
+    <!-- Drop Down -->
+    
 </form>
