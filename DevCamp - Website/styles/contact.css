@@ -20,9 +20,10 @@
     font-weight: 900;
     text-align: right;
     font-size: 1.25em;
-   
-    
-    
+}
+
+.company-meta-data-sidebar-wrapper > .company-details-wrapper i {
+    color: #cea135;
 }
 
 #info-container {
