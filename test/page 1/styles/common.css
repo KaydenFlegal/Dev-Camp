@@ -1,0 +1,56 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+header {
+    width: 100vw;
+    height: 100px;
+    background-color:aqua;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto Slab', serif;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    background-color:aquamarine;
+}
+
+.navbar-container {
+    background-color: gray;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.navbar-container > .logo-section {
+    height: 100px;
+
+}
+
+.navbar-container > .links-section {
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-container > .links-section > .links > ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    
+}
+
+.navbar-container > .links-section > .links {
+    width: 100%;
+    height: 50px;
+    background-color: blue;
+}
