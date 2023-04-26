@@ -162,17 +162,22 @@ body {
 
 .main-section {
     width: 99vw;
-    height: 87.5vh;
+    height: 69.5vh;
     display: grid;
     grid-template-columns: 4fr 3fr;
 }
 
 .main-section > .info-section {
     background-color: red;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .main-section > .info-section > .info-wrapper {
     background-color: green;
+    width: 900px;
+    height: 520px;
 
 }
 
@@ -185,6 +190,10 @@ body {
 
 /* Footer section start*/
 
-
+.footer-section {
+    width: 100vw;
+    height: 18vh;
+    background-color: yellow;
+}
 
 /* Footer section end*/
